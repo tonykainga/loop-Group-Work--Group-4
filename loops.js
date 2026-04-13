@@ -68,6 +68,30 @@ for(let x=1; x< numbers2.length; x++) {
 
 // Q5 Count Word Length Categories
 
+let words = ["cat", "elephant", "dog", "giraffe", "sun", "notebook", "pen"];
+
+let short = 0;
+let medium =0;
+let long = 0;
+
+for(let z=0; z<words.length; z++) {
+    let length=words[z].length;
+
+    if(length >=1 && length <=3) {
+        short++;
+    } else if (length>= 4 && length <=6) {
+        medium++;
+    } else {
+        long++;
+    }
+}
+
+console.log("short:",short);
+console.log("medium:",medium);
+console.log("long:",long);
+
+
+
 
 
 
